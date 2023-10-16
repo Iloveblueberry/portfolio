@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="img/파비콘.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /><!-- 갤러리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!-- aos -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 🎈script -->
+    <script src="lib/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script><!-- 디자인스와이퍼 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- 갤러리 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+            });//swiper-slide
+
+            $(function () {
+                setTimeout(function () {
+                    $('.main .inner .title img').css({
+                        'transform': 'translateX(-50%) scale(1)',
+                    })
+                }, 700);//smile표정
+
+            })
+
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 450) {
+                        $('#topBtn').fadeIn();
+                    } else {
+                        $('#topBtn').fadeOut();
+                    }
+                });
+                $("#topBtn").click(function () {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 400);
+                    return false;
+                });
+            });//top버튼
+
+        })//script end
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="inner">
+                <h1>
+                    <img src="img/logo흰색.png" alt="로고">
+                </h1>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#publishing">PUBLISHING</a></li>
+                    <li><a href="#design">DESIGN</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div><!-- .inner end -->
+        </header>
+
+
+        <!-- 🎈main -->
+        <section class="main" id="home">
+            <div class="inner">
+                <div class="title">
+                    <h2>HI, THERE!<br>
+                        THIS IS <span>YEANA'S</span> PORTFOLIO</h2>
+                    <img src="img/웃는표정.gif" alt="웃는표정">
+                </div><!-- .title end -->
+
+                <div class="welcome">
+                    <img src="img/웰컴텍스트.svg" alt="웰컴텍스트">
+                    <p><a href="#">이력서보기</a></p>
+                </div><!-- .welcome end -->
+            </div><!-- .inner end -->
+        </section><!-- .main_end -->
+
+
+        <!-- 🎈about -->
+        <section class="about" id="about">
+            <div class="inner">
+                <div class="title" data-aos="fade-down" data-aos-duration="600">
+                    <h3>01.About</h3>
+                    <p><span>도전</span>하며 <span>성장</span>하는 신입 디자이너 & 퍼블리셔 이예나 입니다.</p>
+                </div><!-- .title end -->
+                <div class="cont">
+                    <figure>
+                        <img src="img/캐릭터.png" alt="캐릭터">
+                    </figure>
+                    <div class="info" data-aos="flip-right" data-aos-delay="350" data-aos-duration="1500">
+                        <div class="info_inner">
+                            <div class="info_left">
+                                <div class="personal">
+                                    <h4>ABOUT</h4>
+                                    <ul>
+                                        <li>NAME<span>이예나</span></li>
+                                        <li>BIRTH<span>1992.08.27</span></li>
+                                        <li>ADDRESS<span>부산시 사하구 괴정동</span></li>
+                                        <li>PHONE<span>010.8474.3048</span></li>
+                                        <li>E-MAIL<span>dpsk3048@naver.com</span></li>
+                                    </ul>
+                                </div><!-- .personal end -->
+                                <div class="edu">
+                                    <h4>EDUCATION</h4>
+                                    <div>
+                                        <p>23.11</p>
+                                        <span>NCS기반 반응형 웹디자인(웹퍼블리셔)<br>교육과정 이수</span>
+                                    </div>
+                                    <div>
+                                        <p>16.08</p>
+                                        <span>신라대학교 국제관광학과 졸업</span>
+                                    </div>
+                                </div><!-- .edu end -->
+                            </div><!-- .info_left end -->
+                            <div class="info_right">
+                                <div class="skill">
+                                    <h4>SKILLS</h4>
+                                    <div class="skill_top">
+                                        <img src="img/🦆 icon _file type html_.png" alt="html">
+                                        <img src="img/🦆 icon _file type css_.png" alt="css">
+                                        <img src="img/🦆 icon _file type js official_.png" alt="javescript">
+                                        <img src="img/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-40.png"
+                                            alt="jquery">
+                                        <img src="img/icons8-react-a-javascript-library-for-building-user-interfaces-40.png"
+                                            alt="react">
+                                    </div><!-- .skill_top end -->
+
+                                    <div class="skill_bottom">
+                                        <img src="img/🦆 icon _adobe photoshop_.png" alt="ps">
+                                        <img src="img/🦆 icon _adobe illustrator_.png" alt="ai">
+                                        <img src="img/🦆 icon _figma_.png" alt="figma">
+                                        <img src="img/🦆 icon _github text_.png" alt="git">
+                                    </div><!-- skill_bottom end -->
+
+                                </div><!-- .skill end -->
+                                <div class="certi">
+                                    <H4>CERTIFICATE</H4>
+                                    <p>16.10<span>컴퓨터활용능력 2급</span></p>
+                                    <p>11.07<span>MOS MASTER</span></p>
+                                    <p>04.12<span>ITQ 파워포인트</span></p>
+                                </div><!-- .certi end -->
+                            </div><!-- .info_right end -->
+                        </div><!-- .info_inner end -->
+                    </div><!-- .info end -->
+                </div><!-- .cont end -->
+            </div><!-- .inner end -->
+        </section><!-- .about end -->
+
+
+        <!-- 🎈publishing -->
+        <section class="publishing" id="publishing">
+            <div class="inner">
+                <div class="title" data-aos="fade-down" data-aos-duration="600">
+                    <h3>02.Publishing</h3>
+                </div><!-- .title end -->
+
+                <!-- ✨hisffee -->
+                <div class="hisffee" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="250">
+                    <div class="cont">
+                        <div class="pc_img">
+                            <span></span>
+                        </div><!-- .pc_img end -->
+                        <div class="text">
+                            <h4>HISFFEE</h4>
+                            <dl>
+                                <dt>프로젝트</dt>
+                                <dd>풀페이지 반응형웹 리디자인&퍼블리싱 </dd>
+                            </dl>
+                            <dl>
+                                <dt>프로그램</dt>
+                                <dd>PHOTOSHOP, VSCODE</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용언어</dt>
+                                <dd>HTML,CSS,JS,JQUERY,FULLPAGE</dd>
+                            </dl>
+                            <dl>
+                                <dt>참여도</dt>
+                                <dd>디자인&퍼블리싱 개인작업(100%)</dd>
+                            </dl>
+                            <div class="btn">
+                                <P><a href="img/상세페이지/히스피_구현.pdf" target="_blank">PROGRESS</a></P>
+                                <SPAN><a href="https://iloveblueberry.github.io/hisffee/"
+                                        target="_blank">WEBSITE</a></SPAN>
+                            </div>
+                        </div><!-- .text end -->
+                    </div><!-- .cont end -->
+                </div><!-- .hisffee end -->
+
+                <!-- ✨LULULEMON -->
+                <div class="lululemon" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="lulu_inner">
+                        <div class="cont">
+                            <div class="text">
+                                <h4>LULULEMON</h4>
+                                <dl>
+                                    <dt>프로젝트</dt>
+                                    <dd>기본웹 리디자인&퍼블리싱 </dd>
+                                </dl>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>PHOTOSHOP, VSCODE</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용언어</dt>
+                                    <dd>HTML,CSS,JQUERY</dd>
+                                </dl>
+                                <dl>
+                                    <dt>참여도</dt>
+                                    <dd>디자인&퍼블리싱 개인작업(100%)</dd>
+                                </dl>
+                                <div class="btn">
+                                    <P><a href="img/상세페이지/룰루레몬_구현.pdf" target="_blank">PROGRESS</a></P>
+                                    <SPAN><a href="https://iloveblueberry.github.io/lululemon/"
+                                            target="_blank">WEBSITE</a></SPAN>
+                                </div>
+                            </div><!-- .text end -->
+                            <div class="pc_img">
+                                <span></span>
+                            </div><!-- .pc_img end -->
+                        </div><!-- .cont end -->
+                    </div><!-- .lulu_inner -->
+                </div><!-- .lululemon end-->
+
+
+                <!-- ✨TIAMO -->
+                <div class="tiamo" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="cont">
+                        <div class="pc_img">
+                            <span></span>
+                        </div><!-- .pc_img end -->
+                        <div class="text">
+                            <h4>카페띠아모</h4>
+                            <dl>
+                                <dt>프로젝트</dt>
+                                <dd>기본웹 리디자인&퍼블리싱 </dd>
+                            </dl>
+                            <dl>
+                                <dt>프로그램</dt>
+                                <dd>FIGMA, VSCODE</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용언어</dt>
+                                <dd>HTML,CSS</dd>
+                            </dl>
+                            <dl>
+                                <dt>참여도</dt>
+                                <dd>디자인&퍼블리싱 개인작업(100%)</dd>
+                            </dl>
+                            <div class="btn">
+                                <P><a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf" target="_blank">PROGRESS</a></P>
+                                <SPAN><a href=" https://iloveblueberry.github.io/tiamo/"
+                                        target="_blank">WEBSITE</a></SPAN>
+                            </div>
+                        </div><!-- .text end -->
+
+                    </div><!-- .cont end -->
+                </div><!-- .tiamo end -->
+
+
+                <!-- ✨부산관광명소 -->
+                <div class="busan" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="busan_inner">
+                        <div class="cont">
+                            <div class="text">
+                                <h4>부산관광명소</h4>
+                                <dl>
+                                    <dt>프로젝트</dt>
+                                    <dd>모바일 앱 디자인&퍼블리싱 </dd>
+                                </dl>
+                                <dl>
+                                    <dt>프로그램</dt>
+                                    <dd>PHOTOSHOP, VSCODE</dd>
+                                </dl>
+                                <dl>
+                                    <dt>사용언어</dt>
+                                    <dd>HTML,CSS,JQUERY,REACT</dd>
+                                </dl>
+                                <dl>
+                                    <dt>참여도</dt>
+                                    <dd>디자인&퍼블리싱 개인작업(100%)</dd>
+                                </dl>
+                                <div class="btn">
+                                    <P><a href="img/상세페이지/부산투어_구현.pdf" target="_blank">PROGRESS</a></P>
+                                    <SPAN><a href="https://fastidious-semifreddo-a5d410.netlify.app"
+                                            target="_blank">WEBSITE</a></SPAN>
+                                </div>
+                            </div><!-- .text end -->
+                            <div class="tablet_img">
+                                <span></span>
+                            </div><!-- .pc_img end -->
+                        </div><!-- .cont end -->
+                    </div><!-- .busan_inner -->
+                </div><!-- .busan end -->
+
+            </div><!-- .inner end -->
+        </section><!-- .publishing end -->
+
+        <!-- 🎈design -->
+        <section class="design" id="design">
+            <div class="inner">
+                <div class="title" data-aos="fade-down" data-aos-duration="600">
+                    <h3>03.Design</h3>
+                </div><!-- .title end -->
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="img/디자인/가을패션세일.jpg" aria-multiline="가을패션세일" data-fancybox="images">
+                                <img src="img/디자인/가을패션세일.jpg" alt="가을패션세일" /></a>
+                            <p>Illustrator</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/블랙프라이데이2.jpg" aria-multiline="블프" data-fancybox="images">
+                                <img src="img/디자인/블랙프라이데이2.jpg" alt="블프" /></a>
+                            <p>Illustrator</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/여름네일4.png" aria-multiline="네일" data-fancybox="images">
+                                <img src="img/디자인/여름네일4.png" alt="네일" /></a>
+                            <p>Illustrator</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/모닝커피3.jpg" aria-multiline="모닝커피" data-fancybox="images">
+                                <img src="img/디자인/모닝커피3.jpg" alt="모닝커피" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/이케아.jpg" aria-multiline="이케아" data-fancybox="images">
+                            <img src="img/디자인/이케아.jpg" alt="이케아" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/하와이항공권.jpg" aria-multiline="하와이항공권" data-fancybox="images">
+                            <img src="img/디자인/하와이항공권.jpg" alt="하와이항공권" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/신혼부부최애템.jpg" aria-multiline="신혼부부" data-fancybox="images">
+                            <img src="img/디자인/신혼부부최애템.jpg" alt="신혼부부" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div class="swiper-slide">   
+                            <a href="img/디자인/부산여행_최종.jpg" aria-multiline="부산여행" data-fancybox="images">
+                            <img src="img/디자인/부산여행_최종.jpg" alt="부산여행" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="img/디자인/그린샐러드.png" aria-multiline="그린샐러드" data-fancybox="images">
+                            <img src="img/디자인/그린샐러드.png" alt="그린샐러드" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                    </div><!-- .swiper wrapper -->
+                </div><!-- .swiper end -->
+
+
+                <div class="hf_banner">
+                    <h4>HISFFEE BANNER DESIGN_<span>made by photoshop</span></h4>
+                    <div class="bn_cont">
+                        <div class="top">
+                            <img src="img/디자인/히스피/시그니처메뉴.jpg" alt="시그니처">
+                            <img src="img/디자인/히스피/레트로에빠진쑥스피.jpg" alt="쑥스피">
+                        </div>
+                        <div class="bottom">
+                            <img src="img/디자인/히스피/가을신메뉴.jpg" alt="가을신메뉴">
+                            <img src="img/디자인/히스피/샌드위치2.jpg" alt="샌드위치">
+                        </div><!-- .bottom end -->
+                    </div><!-- bn_cont end -->
+                </div><!-- .hf_banner -->
+            </div><!-- .inner end -->
+        </section><!-- .design end -->
+
+        <!-- 🎈contact -->
+        <section class="contact" id="contact">
+            <div class="inner">
+                <div class="title" data-aos="fade-down" data-aos-duration="600">
+                    <h3>04.CONTACT</h3>
+                </div><!-- .title end -->
+                <div class="kakao">
+                    <div class="memo">
+                        <img src="img/KakaoTalk_-오픈채팅.png" alt="카카오QR코드">
+                    </div><!-- .memo end -->
+                    <img src="img/빼꼼캐릭터.png" alt="카카오캐릭터">
+                </div><!-- .kakao end -->
+                <span><a href="tel:010.8474.3048">Tel. 010.8474.3048</a></span>
+                <span><a href="mailto:dpsk3048@naver.com" target="_blank">Email: dpsk3048@naver.com</a></span>
+            </div><!-- .inner end -->
+
+            <div class="thank_you">
+                <p class="thanks">THANK YOU FOR WATCHING MY PORTFOLIO THANK YOU FOR WATCHING MY PORTFOLIO THANK YOU FOR
+                    WATCHING MY PORTFOLIO THANK YOU FOR WATCHING MY PORTFOLIO THANK YOU FOR WATCHING MY PORTFOLIO </p>
+            </div>
+        </section><!-- .contact end -->
+
+        <footer>
+            <span>본 페이지는 상업적 목적이 아닌 포트폴리오용으로 제작 되었습니다.</span>
+            <p>COPYRIGHT ⓒ 2023. YEANALEE ALL RIGHT RESERVED.</p>
+        </footer>
+
+    </div><!-- #wrap end -->
+    <a id="topBtn" href="#"><img src="img/icons8-top-50 (1).png" alt="top"></a>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

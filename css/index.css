@@ -1,0 +1,1036 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CookieRun';
+    src: url('CookieRunFont/CookieRun-Bold.eot');
+    src: url('CookieRun-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CookieRunFont/CookieRun-Bold.woff2') format('woff2'),
+        url('CookieRunFont/CookieRun-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CookieRun';
+    src: url('CookieRunFont/CookieRun-Regular.eot');
+    src: url('CookieRunFont/CookieRun-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CookieRunFont/CookieRun-Regular.woff2') format('woff2'),
+        url('CookieRunFont/CookieRun-Regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('pretendard/Pretendard-Regular.eot');
+    src: url('pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('pretendard/Pretendard-Regular.woff') format('woff'),
+        url('pretendard/Pretendard-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('pretendard/Pretendard-SemiBold.eot');
+    src: url('pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('pretendard/Pretendard-SemiBold.woff') format('woff'),
+        url('pretendard/Pretendard-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('pretendard/Pretendard-Bold.eot');
+    src: url('pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('pretendard/Pretendard-Bold.woff') format('woff'),
+        url('pretendard/Pretendard-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+body {
+    color: #333;
+    line-height: 1;
+    font-family: 'Pretendard';
+    cursor: url('../img/cursor3-smile-50.png'), auto;
+}
+
+
+.inner {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.title h3 {
+    font-family: 'CookieRun';
+    font-size: 85px;
+    margin-bottom: 60px;
+}
+
+header {
+    background-color: #f5b11d;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .inner h1 img {
+    height: 70px;
+}
+
+header .inner ul li {
+    padding-left: 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+}
+
+header .inner li a {
+    overflow: visible;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: color .4s;
+    transition: color .4s
+  }
+  
+  @keyframes eff24-move {
+    30% {
+      -webkit-transform: translate3d(0, -5px, 0) rotate(5deg);
+      transform: translate3d(0, -5px, 0) rotate(5deg)
+    }
+    50% {
+      -webkit-transform: translate3d(0, -3px, 0) rotate(-4deg);
+      transform: translate3d(0, -3px, 0) rotate(-4deg)
+    }
+    80% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+      transform: translate3d(0, 0, 0) rotate(-3deg)
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg)
+    }
+  }
+  
+  header .inner li a:hover {
+    color: #666;
+    font-weight: bold;
+    -webkit-animation-name: eff24-move;
+    animation-name: eff24-move;
+    -webkit-animation-duration: .4s;
+    animation-duration: .4s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1
+  }
+
+/* 🎈main */
+.main {
+    height: 100vh;
+    padding-bottom: 100px;
+}
+
+.main .inner {
+    height: 100%;
+    position: relative;
+}
+
+.main .inner .title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+
+.main .inner .title h2 {
+    font-family: 'CookieRun';
+    font-size: 85px;
+    letter-spacing: 3px;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.main .inner .title h2 span {
+    color: #e64894;
+    animation: yeana 3s;
+}
+
+@keyframes yeana {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.main .inner .title img {
+    position: absolute;
+    left: 50%;
+    transform: scale(0);
+    width: 150px;
+    margin-top: 50px;
+}
+
+.main .inner .welcome {
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+}
+
+.main .inner .welcome img {
+    height: 170px;
+    animation: welcome 6s infinite linear;
+    position: relative;
+}
+
+.main .inner .welcome p {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    font-size: 20px;
+    display: block;
+    background-color: #f5b11d;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    font-family: 'CookieRun';
+}
+
+.main .inner .welcome p:hover {
+    background-color: #ff5e9e;
+    color: #fff;
+    transition: 1s;
+}
+
+.main .inner .welcome p a {
+    display: block;
+}
+
+
+@keyframes welcome {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 🎈01about */
+.about {
+    height: 100vh;
+    padding-top: 300px;
+    background-color: #fffbf2;
+}
+
+.about .inner .title {
+    display: flex;
+    align-items: baseline;
+}
+
+.about .inner .title p {
+    font-family: 'Pretendard';
+    padding-left: 40px;
+    font-size: 26px;
+}
+
+.about .inner .title p span {
+    color: #e64894;
+    font-weight: bold;
+}
+
+.about .inner .cont {
+    display: flex;
+}
+
+.about .inner .cont figure {
+    width: 35%;
+}
+
+
+.about .inner .cont .info .info_inner {
+    display: flex;
+    padding-left: 50px;
+    font-family: 'Pretendard';
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.about .inner .cont .info h4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about .inner .cont .info .info_left {}
+
+.about .inner .cont .info .info_right {
+    margin-left: 80px;
+}
+
+/* ✨about_personal */
+.about .inner .cont .info .info_left .personal {
+    margin-bottom: 40px;
+}
+
+.about .inner .cont .info .info_left .personal ul li {
+
+    font-weight: bold;
+}
+
+.about .inner .cont .info .info_left .personal ul li span {
+    padding-left: 50px;
+    font-weight: normal;
+}
+
+
+.about .inner .cont .info .info_left .personal ul li:nth-child(3) span {
+    padding-left: 18px;
+}
+
+.about .inner .cont .info .info_left .personal ul li:nth-child(4) span {
+    padding-left: 43px;
+}
+
+.about .inner .cont .info .info_left .personal ul li:nth-child(5) span {
+    padding-left: 43px;
+}
+
+/* ✨about_edu */
+.about .inner .cont .info .info_left .edu div {
+    display: flex;
+}
+
+.about .inner .cont .info .info_left .edu div p {
+    font-weight: bold;
+}
+
+.about .inner .cont .info .info_left .edu div span {
+    padding-left: 56px;
+}
+
+.about .inner .cont .info .info_left .edu div:nth-child(2) span {
+    padding-left: 63px;
+}
+
+/* ✨about_skills */
+.about .inner .cont .info .info_right .skill {
+    margin-bottom: 50px;
+}
+
+.about .inner .cont .info .info_right .skill .skill_top {
+    margin-bottom: 10px;
+}
+
+.about .inner .cont .info .info_right .skill img {
+    height: 50px;
+    padding-right: 15px;
+}
+
+/* ✨about_certificate */
+.about .inner .cont .info .info_right .certi p {
+    font-weight: bold;
+}
+
+.about .inner .cont .info .info_right .certi p span {
+    font-weight: normal;
+    padding-left: 50px;
+}
+
+
+/* 🎈02publishing */
+.publishing {
+    padding: 200px 0;
+}
+
+.publishing h3 {
+    margin-bottom: 200px;
+}
+
+
+/* ✨HISFFEE */
+.publishing .hisffee {
+    margin-bottom: 400px;
+    width: 1200px;
+    height: 450px;
+    background-color: #f5b41c;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.publishing .hisffee .cont {
+    display: flex;
+}
+
+.publishing .hisffee .cont .pc_img {
+    background: url("../img/히스피메인.png") no-repeat;
+    width: 603px;
+    height: 500px;
+    position: relative;
+    transform: translate(50px, -130px);
+}
+
+.publishing .hisffee .pc_img span {
+    background: url('../img/히스피전체샷.png') no-repeat;
+    width: 555px;
+    height: 335px;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+}
+
+.publishing .hisffee .cont .pc_img:hover span {
+    animation: hisffeeScroll 10s infinite;
+}
+
+@keyframes hisffeeScroll {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 0 -1100px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.publishing .hisffee .cont .text {
+    margin-top: 80px;
+    margin-left: 150px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.publishing .hisffee .cont .text h4 {
+    font-family: 'CookieRun';
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.publishing .hisffee .cont .text dl {
+    display: flex;
+}
+
+.publishing .hisffee .cont .text dl dt {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.publishing .hisffee .cont .text dl:nth-child(5) dt {
+    margin-right: 65px;
+}
+
+.publishing .hisffee .cont .text dl dd {
+    font-size: 18px;
+}
+
+.publishing .hisffee .cont .text .btn {
+    margin-top: 70px;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.publishing .hisffee .cont .text .btn p {
+    margin-right: 15px;
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.publishing .hisffee .cont .text .btn span {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+
+/* ✨LULULEMON */
+.publishing .lululemon {
+
+}
+
+.publishing .lululemon .lulu_inner {
+    margin-bottom: 400px;
+    width: 1200px;
+    height: 450px;
+    background-color: #f15e5d;
+    border-radius: 30px;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.3);
+    transform: translateX(300px);
+}
+
+.publishing .lululemon .cont {
+    display: flex;
+}
+
+.publishing .lululemon .cont .pc_img {
+    background: url("../img/룰루레몬메인.png") no-repeat;
+    width: 603px;
+    height: 500px;
+    position: relative;
+    transform: translate(50px, -130px);
+}
+
+.publishing .lululemon .pc_img span {
+    background: url('../img/룰루레몬전체.png') no-repeat;
+    width: 555px;
+    height: 335px;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+}
+
+.publishing .lululemon .cont .pc_img:hover span {
+    animation: luluScroll 10s infinite;
+}
+
+@keyframes luluScroll {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 0 -1340px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.publishing .lululemon .cont .text {
+    margin: 80px 40px 0 90px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.publishing .lululemon .cont .text h4 {
+    font-family: 'CookieRun';
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.publishing .lululemon .cont .text dl {
+    display: flex;
+}
+
+.publishing .lululemon .cont .text dl dt {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.publishing .lululemon .cont .text dl:nth-child(5) dt {
+    margin-right: 65px;
+}
+
+.publishing .lululemon .cont .text dl dd {
+    font-size: 18px;
+}
+
+.publishing .lululemon .cont .text .btn {
+    margin-top: 70px;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.publishing .lululemon .cont .text .btn p {
+    margin-right: 15px;
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.publishing .lululemon .cont .text .btn span {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+
+
+/* ✨TIAMO */
+.publishing .tiamo {
+    margin-bottom: 400px;
+    width: 1200px;
+    height: 450px;
+    background-color: #4cae90;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.publishing .tiamo .cont {
+    display: flex;
+}
+
+.publishing .tiamo .cont .pc_img {
+    background: url("../img/띠아모메인.png") no-repeat;
+    width: 603px;
+    height: 500px;
+    position: relative;
+    transform: translate(50px, -130px);
+}
+
+.publishing .tiamo .pc_img span {
+    background: url('../img/띠아모전체.png') no-repeat;
+    width: 555px;
+    height: 335px;
+    position: absolute;
+    top: 26px;
+    left: 25px;
+}
+
+.publishing .tiamo .cont .pc_img:hover span {
+    animation: tiamoScroll 10s infinite;
+}
+
+@keyframes tiamoScroll {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 0 -965px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+.publishing .tiamo .cont .text {
+    margin-top: 80px;
+    margin-left: 150px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.publishing .tiamo .cont .text h4 {
+    font-family: 'CookieRun';
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.publishing .tiamo .cont .text dl {
+    display: flex;
+}
+
+.publishing .tiamo .cont .text dl dt {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.publishing .tiamo .cont .text dl:nth-child(5) dt {
+    margin-right: 65px;
+}
+
+.publishing .tiamo .cont .text dl dd {
+    font-size: 18px;
+}
+
+.publishing .tiamo .cont .text .btn {
+    margin-top: 70px;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.publishing .tiamo .cont .text .btn p {
+    margin-right: 15px;
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.publishing .tiamo .cont .text .btn span {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+
+/* ✨부산관광명소 */
+
+.publishing .busan .busan_inner {
+    margin-bottom: 100px;
+    width: 1200px;
+    height: 450px;
+    background-color: #6589c6;
+    border-radius: 30px;
+    position: relative;
+    transform: translateX(300px);
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.publishing .busan .cont {
+    display: flex;
+}
+
+.publishing .busan .cont .tablet_img {
+    background: url("../img/부산명소_리액트_메인.png") no-repeat;
+    width: 580px;
+    height: 800px;
+    position: relative;
+    transform: translate(150px, -230px);
+}
+
+.publishing .busan .tablet_img span {
+    background: url('../img/부산관광명소전체.png') no-repeat;
+    width: 479px;
+    height: 462px;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+
+.publishing .busan .cont .tablet_img:hover span {
+    animation: busan 10s infinite;
+}
+
+@keyframes busan {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 0 -750px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.publishing .busan .cont .text {
+    margin: 80px 60px 0 110px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.publishing .busan .cont .text h4 {
+    font-family: 'CookieRun';
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.publishing .busan .cont .text dl {
+    display: flex;
+}
+
+.publishing .busan .cont .text dl dt {
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.publishing .busan .cont .text dl:nth-child(5) dt {
+    margin-right: 65px;
+}
+
+.publishing .busan .cont .text dl dd {
+    font-size: 18px;
+}
+
+.publishing .busan .cont .text .btn {
+    margin-top: 70px;
+    display: flex;
+    font-size: 20px;
+}
+
+
+.publishing .busan .cont .text .btn p {
+    margin-right: 15px;
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.publishing .busan .cont .text .btn span {
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+
+/* 🎈design */
+.design {
+    background-color: #fcedcf;
+    padding: 200px 0;
+}
+
+.design .swiper {
+    width: 1440px;
+    margin-top: 100px;
+}
+
+.design .swiper-slide{
+    width: 400px;
+}
+
+.design .swiper-slide img {
+    width: 400px;
+    height: 450px;
+}
+
+.design .swiper-slide img:hover {
+    transform: scale(0.9);
+    transition: 0.7s;
+}
+
+.design .swiper-slide p {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top {
+    display: none;
+}
+
+
+
+
+.design .hf_banner h4 {
+    margin-top: 150px;
+    font-family: 'CookieRun';
+    font-size: 50px;
+}
+
+.design .hf_banner h4 span {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.design .hf_banner .bn_cont {
+    width: 1330px;
+}
+
+.design .hf_banner img {
+    cursor: pointer;
+    filter: grayscale(1) contrast(0.8);
+}
+
+.design .hf_banner img:hover {
+    filter: grayscale(0) contrast(1);
+    transition: 0.5s;
+}
+
+.design .hf_banner .top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.design .hf_banner .top img:nth-child(1) {
+    height: 420px;
+    object-fit: cover;
+}
+
+.design .hf_banner .top img:nth-child(2) {
+    height: 420px;
+    object-fit: cover;
+}
+
+.design .hf_banner .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.design .hf_banner .bottom img:nth-child(1) {
+    height: 420px;
+    object-fit: cover;
+}
+
+.design .hf_banner .bottom img:nth-child(2) {
+    height: 420px;
+    object-fit: cover;
+}
+
+/* 🎈CONTACT */
+.contact {
+    padding-top: 100px;
+    background-color:#fff;
+}
+
+
+.contact .inner .kakao {
+    margin: 50px 0 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .kakao .memo {
+  position: relative;
+  transform: translate(10px,30px);
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  border: 10px solid #f5b11d;
+}
+
+.contact .kakao .memo:hover {
+    background-color: #f5b41c;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.contact .kakao .memo img{
+    width: 300px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.contact .kakao > img {
+    position: relative;
+    z-index: 9;
+    height: 350px;
+}
+
+.contact .inner span {
+    font-family: 'CookieRun';
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.contact .inner span:hover {
+    color: #888;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.contact .thank_you {
+    overflow: hidden;
+}
+
+.contact .thank_you:hover .thanks{
+    animation-play-state: paused;
+    color: #ff9706;
+    cursor: pointer;
+}
+
+.contact .thank_you p{
+    padding: 30px 0;
+    color: #f5b11d48;
+    animation:text 12s infinite linear;
+    font-size: 50px;
+    white-space: nowrap;
+}
+
+@keyframes text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    line-height: 1.3;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+a#topBtn { 
+	position: fixed; 
+	right: 2%; 
+	bottom: 50px;
+	display: none;
+	z-index: 9999; 
+}
