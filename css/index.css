@@ -105,6 +105,12 @@ header {
     z-index: 9999;
 }
 
+header.on {
+    height: 70px;
+    transition: 1s;
+}
+
+
 header .inner {
     height: 100%;
     display: flex;
@@ -113,7 +119,7 @@ header .inner {
 }
 
 header .inner h1 img {
-    height: 70px;
+    height: 55px;
 }
 
 header .inner ul li {
