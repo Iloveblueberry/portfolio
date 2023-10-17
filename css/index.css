@@ -402,7 +402,7 @@ header .inner li a {
 /* ✨HISFFEE */
 .publishing .hisffee {
     margin-bottom: 400px;
-    width: 1200px;
+    width: 1240px;
     height: 450px;
     background-color: #f5b41c;
     border-radius: 30px;
@@ -430,7 +430,7 @@ header .inner li a {
     left: 25px;
 }
 
-.publishing .hisffee .cont .pc_img:hover span {
+.publishing .hisffee:hover span {
     animation: hisffeeScroll 10s infinite;
 }
 
@@ -464,6 +464,7 @@ header .inner li a {
 
 .publishing .hisffee .cont .text dl {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .publishing .hisffee .cont .text dl dt {
@@ -486,7 +487,6 @@ header .inner li a {
     font-size: 20px;
 }
 
-
 .publishing .hisffee .cont .text .btn p {
     margin-right: 15px;
     display: block;
@@ -498,6 +498,13 @@ header .inner li a {
     border-radius: 30px;
 }
 
+.publishing .hisffee .cont .text .btn p:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
+}
+
+
 .publishing .hisffee .cont .text .btn span {
     width: 160px;
     height: 40px;
@@ -508,14 +515,18 @@ header .inner li a {
 }
 
 
-/* ✨LULULEMON */
-.publishing .lululemon {
-
+.publishing .hisffee .cont .text .btn span:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
 }
 
+
+
+/* ✨LULULEMON */
 .publishing .lululemon .lulu_inner {
     margin-bottom: 400px;
-    width: 1200px;
+    width: 1240px;
     height: 450px;
     background-color: #f15e5d;
     border-radius: 30px;
@@ -544,7 +555,7 @@ header .inner li a {
     left: 25px;
 }
 
-.publishing .lululemon .cont .pc_img:hover span {
+.publishing .lululemon:hover span {
     animation: luluScroll 10s infinite;
 }
 
@@ -576,6 +587,7 @@ header .inner li a {
 
 .publishing .lululemon .cont .text dl {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .publishing .lululemon .cont .text dl dt {
@@ -610,6 +622,12 @@ header .inner li a {
     border-radius: 30px;
 }
 
+.publishing .lululemon .cont .text .btn p:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
+}
+
 .publishing .lululemon .cont .text .btn span {
     width: 160px;
     height: 40px;
@@ -620,11 +638,18 @@ header .inner li a {
 }
 
 
+.publishing .lululemon .cont .text .btn span:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
+}
+
+
 
 /* ✨TIAMO */
 .publishing .tiamo {
     margin-bottom: 400px;
-    width: 1200px;
+    width: 1240px;
     height: 450px;
     background-color: #4cae90;
     border-radius: 30px;
@@ -652,7 +677,7 @@ header .inner li a {
     left: 25px;
 }
 
-.publishing .tiamo .cont .pc_img:hover span {
+.publishing .tiamo:hover span {
     animation: tiamoScroll 10s infinite;
 }
 
@@ -686,6 +711,7 @@ header .inner li a {
 
 .publishing .tiamo .cont .text dl {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .publishing .tiamo .cont .text dl dt {
@@ -720,6 +746,12 @@ header .inner li a {
     border-radius: 30px;
 }
 
+.publishing .tiamo .cont .text .btn p:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
+}
+
 .publishing .tiamo .cont .text .btn span {
     width: 160px;
     height: 40px;
@@ -730,11 +762,17 @@ header .inner li a {
 }
 
 
+.publishing .tiamo .cont .text .btn span:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
+}
+
 /* ✨부산관광명소 */
 
 .publishing .busan .busan_inner {
     margin-bottom: 100px;
-    width: 1200px;
+    width: 1240px;
     height: 450px;
     background-color: #6589c6;
     border-radius: 30px;
@@ -765,7 +803,7 @@ header .inner li a {
     left: 20px;
 }
 
-.publishing .busan .cont .tablet_img:hover span {
+.publishing .busan:hover span {
     animation: busan 10s infinite;
 }
 
@@ -797,6 +835,7 @@ header .inner li a {
 
 .publishing .busan .cont .text dl {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .publishing .busan .cont .text dl dt {
@@ -831,6 +870,12 @@ header .inner li a {
     border-radius: 30px;
 }
 
+.publishing .busan .cont .text .btn p:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
+}
+
 .publishing .busan .cont .text .btn span {
     width: 160px;
     height: 40px;
@@ -838,6 +883,12 @@ header .inner li a {
     text-align: center;
     border: 2px solid #fff;
     border-radius: 30px;
+}
+
+.publishing .busan .cont .text .btn span:hover {
+    transition: 0.7s;
+    background-color: #fff;
+    color: #333;
 }
 
 
@@ -878,7 +929,10 @@ header .inner li a {
 }
 
 
-
+.design .hf_banner {
+    width: 1360px;
+    margin: 0 auto;
+}
 
 .design .hf_banner h4 {
     margin-top: 150px;
@@ -891,10 +945,6 @@ header .inner li a {
     font-weight: normal;
 }
 
-.design .hf_banner .bn_cont {
-    width: 1330px;
-}
-
 .design .hf_banner img {
     cursor: pointer;
     filter: grayscale(1) contrast(0.8);
@@ -903,6 +953,7 @@ header .inner li a {
 .design .hf_banner img:hover {
     filter: grayscale(0) contrast(1);
     transition: 0.5s;
+    cursor: default;
 }
 
 .design .hf_banner .top {
