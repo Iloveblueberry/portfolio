@@ -36,30 +36,56 @@
                 },
             });//swiper-slide
 
-            $(function () {
+           
                 setTimeout(function () {
                     $('.main .inner .title img').css({
                         'transform': 'translateX(-50%) scale(1)',
                     })
                 }, 700);//smile표정
 
-            })
 
-            $(function () {
+
+          
+                let contactTop = $('.contact').offset().top;
+                console.log(contactTop)
+
                 $(window).scroll(function () {
                     if ($(this).scrollTop() > 450) {
                         $('#topBtn').fadeIn();
                     } else {
                         $('#topBtn').fadeOut();
                     }
+
+                    console.log($(window).scrollTop())
+
+                    if($(this).scrollTop() + 200 >= contactTop) {
+                        $('.kakao > img').css({
+                            'right':'0px',
+                            'opacity': '1',
+                            'transition' : 'right 0.8s, opacity 0.5s 0.5s',
+                        });
+                    } else {
+                        $('.kakao > img').css({
+                            'right': '150px',
+                            'opacity':'0',
+                        });
+                    }
                 });
+
+
                 $("#topBtn").click(function () {
                     $('html, body').animate({
                         scrollTop: 0
                     }, 400);
                     return false;
                 });
-            });//top버튼
+       
+
+     
+             
+                   
+           
+        
 
         })//script end
     </script>
