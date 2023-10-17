@@ -965,17 +965,21 @@ header .inner li a {
     cursor: pointer;
 }
 
-.contact .kakao .memo img{
+.contact .kakao .memo img {
     width: 260px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
     top: 50%;
+    z-index: 99;
 }
 .contact .kakao > img {
     position: relative;
     z-index: 9;
-    height: 300px;
+    opacity: 0;
+    height: 240px;
+    right: 150px;
+    top: 50px;
 }
 
 .contact .inner span {
