@@ -36,56 +36,56 @@
                 },
             });//swiper-slide
 
-           
-                setTimeout(function () {
-                    $('.main .inner .title img').css({
-                        'transform': 'translateX(-50%) scale(1)',
-                    })
-                }, 700);//smile표정
+
+            setTimeout(function () {
+                $('.main .inner .title img').css({
+                    'transform': 'translateX(-50%) scale(1)',
+                })
+            }, 700);//smile표정
 
 
 
-          
-                let contactTop = $('.contact').offset().top;
-                console.log(contactTop)
 
-                $(window).scroll(function () {
-                    if ($(this).scrollTop() > 450) {
-                        $('#topBtn').fadeIn();
-                    } else {
-                        $('#topBtn').fadeOut();
-                    }
+            let contactTop = $('.contact').offset().top;
+            console.log(contactTop)
 
-                    console.log($(window).scrollTop())
+            $(window).scroll(function () {
+                if ($(document).scrollTop() > 0) {
+                    $('header').addClass('on');
+                } else {
+                    $('header').removeClass('on');
+                }
 
-                    if($(this).scrollTop() + 200 >= contactTop) {
-                        $('.kakao > img').css({
-                            'right':'0px',
-                            'opacity': '1',
-                            'transition' : 'right 0.8s, opacity 0.5s 0.5s',
-                        });
-                    } else {
-                        $('.kakao > img').css({
-                            'right': '150px',
-                            'opacity':'0',
-                        });
-                    }
-                });
+                if ($(document).scrollTop() > 450) {
+                    $('#topBtn').fadeIn();
+                } else {
+                    $('#topBtn').fadeOut();
+                }
+
+                console.log($(window).scrollTop())
+
+                if ($(document).scrollTop() + 200 >= contactTop) {
+                    $('.kakao > img').css({
+                        'right': '0px',
+                        'opacity': '1',
+                        'transition': 'right 0.8s, opacity 0.5s 0.5s',
+                    });
+                } else {
+                    $('.kakao > img').css({
+                        'right': '150px',
+                        'opacity': '0',
+                    });
+                }
+            });
 
 
-                $("#topBtn").click(function () {
-                    $('html, body').animate({
-                        scrollTop: 0
-                    }, 400);
-                    return false;
-                });
-       
+            $("#topBtn").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
 
-     
-             
-                   
-           
-        
 
         })//script end
     </script>
@@ -299,7 +299,8 @@
                                 <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                             </dl>
                             <div class="btn">
-                                <P><a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf" target="_blank">PROGRESS</a></P>
+                                <P><a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf"
+                                        target="_blank">PROGRESS</a></P>
                                 <SPAN><a href=" https://iloveblueberry.github.io/tiamo/"
                                         target="_blank">WEBSITE</a></SPAN>
                             </div>
@@ -378,27 +379,27 @@
                         </div>
                         <div class="swiper-slide">
                             <a href="img/디자인/이케아.jpg" aria-multiline="이케아" data-fancybox="images">
-                            <img src="img/디자인/이케아.jpg" alt="이케아" /></a>
+                                <img src="img/디자인/이케아.jpg" alt="이케아" /></a>
                             <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="img/디자인/하와이항공권.jpg" aria-multiline="하와이항공권" data-fancybox="images">
-                            <img src="img/디자인/하와이항공권.jpg" alt="하와이항공권" /></a>
+                                <img src="img/디자인/하와이항공권.jpg" alt="하와이항공권" /></a>
                             <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="img/디자인/신혼부부최애템.jpg" aria-multiline="신혼부부" data-fancybox="images">
-                            <img src="img/디자인/신혼부부최애템.jpg" alt="신혼부부" /></a>
+                                <img src="img/디자인/신혼부부최애템.jpg" alt="신혼부부" /></a>
                             <p>PHOTOSHOP</p>
                         </div>
-                        <div class="swiper-slide">   
+                        <div class="swiper-slide">
                             <a href="img/디자인/부산여행_최종.jpg" aria-multiline="부산여행" data-fancybox="images">
-                            <img src="img/디자인/부산여행_최종.jpg" alt="부산여행" /></a>
+                                <img src="img/디자인/부산여행_최종.jpg" alt="부산여행" /></a>
                             <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
                             <a href="img/디자인/그린샐러드.png" aria-multiline="그린샐러드" data-fancybox="images">
-                            <img src="img/디자인/그린샐러드.png" alt="그린샐러드" /></a>
+                                <img src="img/디자인/그린샐러드.png" alt="그린샐러드" /></a>
                             <p>PHOTOSHOP</p>
                         </div>
                     </div><!-- .swiper wrapper -->
