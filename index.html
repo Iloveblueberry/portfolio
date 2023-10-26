@@ -15,80 +15,12 @@
 
     <!-- 🎈script -->
     <script src="lib/jquery-3.7.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script><!-- 디자인스와이퍼 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- 갤러리 -->
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        $(function () {
-            var swiper = new Swiper(".mySwiper", {
-                effect: "coverflow",
-                grabCursor: true,
-                centeredSlides: true,
-                slidesPerView: "auto",
-                coverflowEffect: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 200,
-                    modifier: 1,
-                    slideShadows: true,
-                },
-            });//swiper-slide
-
-
-            setTimeout(function () {
-                $('.main .inner .title img').css({
-                    'transform': 'translateX(-50%) scale(1)',
-                })
-            }, 700);//smile표정
-
-
-
-
-            let contactTop = $('.contact').offset().top;
-            console.log(contactTop)
-
-            $(window).scroll(function () {
-                if ($(document).scrollTop() > 0) {
-                    $('header').addClass('on');
-                } else {
-                    $('header').removeClass('on');
-                }
-
-                if ($(document).scrollTop() > 450) {
-                    $('#topBtn').fadeIn();
-                } else {
-                    $('#topBtn').fadeOut();
-                }
-
-                console.log($(window).scrollTop())
-
-                if ($(document).scrollTop() + 200 >= contactTop) {
-                    $('.kakao > img').css({
-                        'right': '0px',
-                        'opacity': '1',
-                        'transition': 'right 0.8s, opacity 0.5s 0.5s',
-                    });
-                } else {
-                    $('.kakao > img').css({
-                        'right': '150px',
-                        'opacity': '0',
-                    });
-                }
-            });
-
-
-            $("#topBtn").click(function () {
-                $('html, body').animate({
-                    scrollTop: 0
-                }, 400);
-                return false;
-            });
-
-
-        })//script end
-    </script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -169,10 +101,8 @@
                                         <img src="img/icon_html.png" alt="html">
                                         <img src="img/icon_css_.png" alt="css">
                                         <img src="img/icon_js.png" alt="javescript">
-                                        <img src="img/icon_jquery.png"
-                                            alt="jquery">
-                                        <img src="img/icon_react.png"
-                                            alt="react">
+                                        <img src="img/icon_jquery.png" alt="jquery">
+                                        <img src="img/icon_react.png" alt="react">
                                     </div><!-- .skill_top end -->
 
                                     <div class="skill_bottom">
@@ -230,14 +160,13 @@
                                 <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                             </dl>
                             <div class="btn">
-                                <P><a href="img/상세페이지/히스피_구현.pdf" target="_blank">PROGRESS</a></P>
-                                <SPAN><a href="https://iloveblueberry.github.io/hisffee/"
-                                        target="_blank">WEBSITE</a></SPAN>
-                            </div>
+                                <a href="img/상세페이지/히스피_구현.pdf" target="_blank">PROGRESS</a></P>
+                                <a href="https://iloveblueberry.github.io/hisffee/" target="_blank">WEBSITE</a>
+                                <a href="https://www.hisffee.com/" target="_blank">기존SITE</a>
+                            </div><!-- .btn end -->
                         </div><!-- .text end -->
                     </div><!-- .cont end -->
-                </div><!-- .hisffee end -->
-
+                </div><!--.hisffee end  -->
                 <!-- ✨LULULEMON -->
                 <div class="lululemon" data-aos="fade-left" data-aos-duration="1200">
                     <div class="lulu_inner">
@@ -261,16 +190,16 @@
                                     <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                                 </dl>
                                 <div class="btn">
-                                    <P><a href="img/상세페이지/룰루레몬_구현.pdf" target="_blank">PROGRESS</a></P>
-                                    <SPAN><a href="https://iloveblueberry.github.io/lululemon/"
-                                            target="_blank">WEBSITE</a></SPAN>
+                                    <a href="img/상세페이지/룰루레몬_구현.pdf" target="_blank">PROGRESS</a>
+                                    <a href="https://iloveblueberry.github.io/lululemon/" target="_blank">WEBSITE</a>
+                                    <a href="https://www.lululemon.co.kr/ko-kr/home" target="_blank">기존SITE</a>
                                 </div>
                             </div><!-- .text end -->
                             <div class="pc_img">
                                 <span></span>
                             </div><!-- .pc_img end -->
                         </div><!-- .cont end -->
-                    </div><!-- .lulu_inner -->
+                    </div>
                 </div><!-- .lululemon end-->
 
 
@@ -299,10 +228,10 @@
                                 <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                             </dl>
                             <div class="btn">
-                                <P><a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf"
-                                        target="_blank">PROGRESS</a></P>
-                                <SPAN><a href=" https://iloveblueberry.github.io/tiamo/"
-                                        target="_blank">WEBSITE</a></SPAN>
+                                <a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf"
+                                    target="_blank">PROGRESS</a>
+                                <a href=" https://iloveblueberry.github.io/tiamo/" target="_blank">WEBSITE</a>
+                                <a href="http://ti-amo.co.kr/main/main.asp" target="_blank">기존SITE</a>
                             </div>
                         </div><!-- .text end -->
 
@@ -333,9 +262,9 @@
                                     <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                                 </dl>
                                 <div class="btn">
-                                    <P><a href="img/상세페이지/부산투어_구현.pdf" target="_blank">PROGRESS</a></P>
-                                    <SPAN><a href="https://fastidious-semifreddo-a5d410.netlify.app"
-                                            target="_blank">WEBSITE</a></SPAN>
+                                    <a href="img/상세페이지/부산투어_구현.pdf" target="_blank">PROGRESS</a>
+                                    <a href="https://fastidious-semifreddo-a5d410.netlify.app"
+                                        target="_blank">WEBSITE</a>
                                 </div>
                             </div><!-- .text end -->
                             <div class="tablet_img">
@@ -345,6 +274,37 @@
                     </div><!-- .busan_inner -->
                 </div><!-- .busan end -->
 
+                <div class="canada" data-aos="fade-right" data-aos-duration="1200">
+                    <div class="cont">
+                        <div class="pc_img">
+                            <span></span>
+                        </div><!-- .pc_img end -->
+                        <div class="text">
+                            <h4>YTOUR(CANADA)</h4>
+                            <dl>
+                                <dt>프로젝트</dt>
+                                <dd>반응형웹 디자인&퍼블리싱 웹접근성</dd>
+                            </dl>
+                            <dl>
+                                <dt>프로그램</dt>
+                                <dd>PHOTOSHOP, VSCODE</dd>
+                            </dl>
+                            <dl>
+                                <dt>사용언어</dt>
+                                <dd>HTML, CSS ,JS, JQUERY</dd>
+                            </dl>
+                            <dl>
+                                <dt>참여도</dt>
+                                <dd>디자인&퍼블리싱 개인작업(100%)</dd>
+                            </dl>
+                            <div class="btn">
+                                <a href="#" target="_blank">PROGRESS</a></P>
+                                <a href="https://iloveblueberry.github.io/canada/" target="_blank">WEBSITE</a>
+                                <a href="img/상세페이지/접근성1920_2.pdf" target="_blank">웹접근성검사</a>
+                            </div><!-- .btn end -->
+                        </div><!-- .text end -->
+                    </div><!-- .cont end -->
+                </div><!-- .canada end -->
             </div><!-- .inner end -->
         </section><!-- .publishing end -->
 
@@ -393,7 +353,7 @@
                             <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/부산여행_최종.jpg"  data-fancybox="images">
+                            <a href="img/디자인/부산여행_최종.jpg" data-fancybox="images">
                                 <img src="img/디자인/부산여행_최종.jpg" alt="부산여행" /></a>
                             <p>PHOTOSHOP</p>
                         </div>
