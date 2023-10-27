@@ -80,8 +80,9 @@ body {
     color: #333;
     line-height: 1;
     font-family: 'Pretendard';
-    cursor: url('../img/cursor3-smile-50.png'), auto;
+    cursor: url('../img/무지개50.png'), auto;
 }
+
 
 
 .inner {
@@ -138,28 +139,31 @@ header .inner li a {
     backface-visibility: hidden;
     -webkit-transition: color .4s;
     transition: color .4s
-  }
-  
-  @keyframes eff24-move {
+}
+
+@keyframes eff24-move {
     30% {
-      -webkit-transform: translate3d(0, -5px, 0) rotate(5deg);
-      transform: translate3d(0, -5px, 0) rotate(5deg)
+        -webkit-transform: translate3d(0, -5px, 0) rotate(5deg);
+        transform: translate3d(0, -5px, 0) rotate(5deg)
     }
+
     50% {
-      -webkit-transform: translate3d(0, -3px, 0) rotate(-4deg);
-      transform: translate3d(0, -3px, 0) rotate(-4deg)
+        -webkit-transform: translate3d(0, -3px, 0) rotate(-4deg);
+        transform: translate3d(0, -3px, 0) rotate(-4deg)
     }
+
     80% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
-      transform: translate3d(0, 0, 0) rotate(-3deg)
+        -webkit-transform: translate3d(0, 0, 0) rotate(-3deg);
+        transform: translate3d(0, 0, 0) rotate(-3deg)
     }
+
     100% {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg)
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
     }
-  }
-  
-  header .inner li a:hover {
+}
+
+header .inner li a:hover {
     color: #666;
     font-weight: bold;
     -webkit-animation-name: eff24-move;
@@ -170,7 +174,7 @@ header .inner li a {
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1
-  }
+}
 
 /* 🎈main */
 .main {
@@ -436,8 +440,16 @@ header .inner li a {
     left: 25px;
 }
 
+.publishing .hisffee .pc_img p img {
+    width: 740px;
+    height: 500px;
+    position: relative;
+    z-index: 99;
+    transform: translate(150px, 120px);
+}
+
 .publishing .hisffee:hover span {
-    animation: hisffeeScroll 16s infinite;
+    animation: hisffeeScroll 20s infinite;
 }
 
 @keyframes hisffeeScroll {
@@ -510,6 +522,12 @@ header .inner li a {
     color: #333;
 }
 
+.publishing .hisffee .cont .text .btn a:nth-child(1) {
+    position: relative;
+    z-index: 999;
+}
+
+
 
 /* ✨LULULEMON */
 .publishing .lululemon .lulu_inner {
@@ -544,7 +562,7 @@ header .inner li a {
 }
 
 .publishing .lululemon:hover span {
-    animation: luluScroll 14s infinite;
+    animation: luluScroll 20s infinite;
 }
 
 @keyframes luluScroll {
@@ -650,7 +668,7 @@ header .inner li a {
 }
 
 .publishing .tiamo:hover span {
-    animation: tiamoScroll 14s infinite;
+    animation: tiamoScroll 18s infinite;
 }
 
 @keyframes tiamoScroll {
@@ -761,7 +779,7 @@ header .inner li a {
 }
 
 .publishing .busan:hover span {
-    animation: busan 14s infinite;
+    animation: busan 18s infinite;
 }
 
 @keyframes busan {
@@ -857,15 +875,23 @@ header .inner li a {
 
 .publishing .canada .pc_img span {
     background: url('../img/캐나다전체샷.png') no-repeat;
-    width: 555px;
+    width: 600px;
     height: 335px;
     position: absolute;
     top: 26px;
     left: 25px;
 }
 
+.publishing .canada .pc_img p img {
+    width: 740px;
+    height: 500px;
+    position: relative;
+    z-index: 99;
+    transform: translate(150px, 120px);
+}
+
 .publishing .canada:hover span {
-    animation: canadaScroll 16s infinite;
+    animation: canadaScroll 20s infinite;
 }
 
 @keyframes canadaScroll {
@@ -938,6 +964,10 @@ header .inner li a {
     color: #333;
 }
 
+.publishing .canada .cont .text .btn a:nth-child(1) {
+    position: relative;
+    z-index: 999;
+}
 
 /* 🎈design */
 .design {
@@ -950,7 +980,7 @@ header .inner li a {
     margin-top: 100px;
 }
 
-.design .swiper-slide{
+.design .swiper-slide {
     width: 400px;
 }
 
@@ -971,7 +1001,11 @@ header .inner li a {
     font-weight: bold;
 }
 
-.swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top {
+.swiper-3d .swiper-slide-shadow,
+.swiper-3d .swiper-slide-shadow-bottom,
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-top {
     display: none;
 }
 
@@ -1038,7 +1072,7 @@ header .inner li a {
 /* 🎈CONTACT */
 .contact {
     padding-top: 100px;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 
@@ -1049,12 +1083,12 @@ header .inner li a {
 }
 
 .contact .kakao .memo {
-  position: relative;
-  transform: translate(10px,30px);
-  width: 300px;
-  height: 300px;
-  background-color: #fff;
-  border: 10px solid #f5b11d;
+    position: relative;
+    transform: translate(10px, 30px);
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border: 10px solid #f5b11d;
 }
 
 .contact .kakao .memo:hover {
@@ -1066,12 +1100,13 @@ header .inner li a {
 .contact .kakao .memo img {
     width: 260px;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
     z-index: 99;
 }
-.contact .kakao > img {
+
+.contact .kakao>img {
     position: relative;
     z-index: 9;
     opacity: 0;
@@ -1097,16 +1132,16 @@ header .inner li a {
     overflow: hidden;
 }
 
-.contact .thank_you:hover .thanks{
+.contact .thank_you:hover .thanks {
     animation-play-state: paused;
     color: #ff9706;
     cursor: pointer;
 }
 
-.contact .thank_you p{
+.contact .thank_you p {
     padding: 30px 0;
     color: #f5b11d48;
-    animation:text 12s infinite linear;
+    animation: text 12s infinite linear;
     font-size: 50px;
     white-space: nowrap;
 }
@@ -1115,6 +1150,7 @@ header .inner li a {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -1129,10 +1165,10 @@ footer {
     font-size: 14px;
 }
 
-a#topBtn { 
-	position: fixed; 
-	right: 2%; 
-	bottom: 50px;
-	display: none;
-	z-index: 9999; 
+a#topBtn {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    display: none;
+    z-index: 9999;
 }
