@@ -15,12 +15,54 @@
 
     <!-- 🎈script -->
     <script src="lib/jquery-3.7.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script><!-- 디자인스와이퍼 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
         integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- 갤러리 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+            });//swiper-slide
+
+            $(function () {
+                setTimeout(function () {
+                    $('.main .inner .title img').css({
+                        'transform': 'translateX(-50%) scale(1)',
+                    })
+                }, 700);//smile표정
+
+            })
+
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 450) {
+                        $('#topBtn').fadeIn();
+                    } else {
+                        $('#topBtn').fadeOut();
+                    }
+                });
+                $("#topBtn").click(function () {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, 400);
+                    return false;
+                });
+            });//top버튼
+
+        })//script end
+    </script>
 </head>
 
 <body>
@@ -52,7 +94,7 @@
 
                 <div class="welcome">
                     <img src="img/웰컴텍스트.svg" alt="웰컴텍스트">
-                    <p><a href="img/상세페이지/이력서&자소서.pdf" target="_blank">이력서보기</a></p>
+                    <p>WELCOME</p>
                 </div><!-- .welcome end -->
             </div><!-- .inner end -->
         </section><!-- .main_end -->
@@ -98,19 +140,20 @@
                                 <div class="skill">
                                     <h4>SKILLS</h4>
                                     <div class="skill_top">
-                                        <img src="img/icon_html.png" alt="html">
-                                        <img src="img/icon_css_.png" alt="css">
-                                        <img src="img/icon_js.png" alt="javescript">
-                                        <img src="img/icon_jquery.png" alt="jquery">
-                                        <img src="img/icon_react.png" alt="react">
+                                        <img src="img/🦆 icon _file type html_.png" alt="html">
+                                        <img src="img/🦆 icon _file type css_.png" alt="css">
+                                        <img src="img/🦆 icon _file type js official_.png" alt="javescript">
+                                        <img src="img/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-40.png"
+                                            alt="jquery">
+                                        <img src="img/icons8-react-a-javascript-library-for-building-user-interfaces-40.png"
+                                            alt="react">
                                     </div><!-- .skill_top end -->
 
                                     <div class="skill_bottom">
-                                        <img src="img/icon_photoshop_.png" alt="ps">
-                                        <img src="img/icon_illustrator_.png" alt="ai">
-                                        <img src="img/icon_figma_.png" alt="figma">
-                                        <img src="img/icon_git.png" alt="git">
-                                        <img src="img/icon_github.png" alt="gitbub">
+                                        <img src="img/🦆 icon _adobe photoshop_.png" alt="ps">
+                                        <img src="img/🦆 icon _adobe illustrator_.png" alt="ai">
+                                        <img src="img/🦆 icon _figma_.png" alt="figma">
+                                        <img src="img/🦆 icon _github text_.png" alt="git">
                                     </div><!-- skill_bottom end -->
 
                                 </div><!-- .skill end -->
@@ -140,7 +183,6 @@
                     <div class="cont">
                         <div class="pc_img">
                             <span></span>
-                            <p><img src="img/히스피모바일목업.png" alt="히스피모바일목업"></p>
                         </div><!-- .pc_img end -->
                         <div class="text">
                             <h4>HISFFEE</h4>
@@ -154,20 +196,21 @@
                             </dl>
                             <dl>
                                 <dt>사용언어</dt>
-                                <dd>HTML, CSS ,JS, JQUERY, FULLPAGE</dd>
+                                <dd>HTML,CSS,JS,JQUERY,FULLPAGE</dd>
                             </dl>
                             <dl>
                                 <dt>참여도</dt>
                                 <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                             </dl>
                             <div class="btn">
-                                <a href="img/상세페이지/히스피_구현.pdf" target="_blank">PROGRESS</a></P>
-                                <a href="https://iloveblueberry.github.io/hisffee/" target="_blank">WEBSITE</a>
-                                <a href="https://www.hisffee.com/" target="_blank">기존SITE</a>
-                            </div><!-- .btn end -->
+                                <P><a href="img/상세페이지/히스피_구현.pdf" target="_blank">PROGRESS</a></P>
+                                <SPAN><a href="https://iloveblueberry.github.io/hisffee/"
+                                        target="_blank">WEBSITE</a></SPAN>
+                            </div>
                         </div><!-- .text end -->
                     </div><!-- .cont end -->
-                </div><!--.hisffee end  -->
+                </div><!-- .hisffee end -->
+
                 <!-- ✨LULULEMON -->
                 <div class="lululemon" data-aos="fade-left" data-aos-duration="1200">
                     <div class="lulu_inner">
@@ -184,23 +227,23 @@
                                 </dl>
                                 <dl>
                                     <dt>사용언어</dt>
-                                    <dd>HTML, CSS, JQUERY</dd>
+                                    <dd>HTML,CSS,JQUERY</dd>
                                 </dl>
                                 <dl>
                                     <dt>참여도</dt>
                                     <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                                 </dl>
                                 <div class="btn">
-                                    <a href="img/상세페이지/룰루레몬_구현.pdf" target="_blank">PROGRESS</a>
-                                    <a href="https://iloveblueberry.github.io/lululemon/" target="_blank">WEBSITE</a>
-                                    <a href="https://www.lululemon.co.kr/ko-kr/home" target="_blank">기존SITE</a>
+                                    <P><a href="img/상세페이지/룰루레몬_구현.pdf" target="_blank">PROGRESS</a></P>
+                                    <SPAN><a href="https://iloveblueberry.github.io/lululemon/"
+                                            target="_blank">WEBSITE</a></SPAN>
                                 </div>
                             </div><!-- .text end -->
                             <div class="pc_img">
                                 <span></span>
                             </div><!-- .pc_img end -->
                         </div><!-- .cont end -->
-                    </div>
+                    </div><!-- .lulu_inner -->
                 </div><!-- .lululemon end-->
 
 
@@ -222,17 +265,16 @@
                             </dl>
                             <dl>
                                 <dt>사용언어</dt>
-                                <dd>HTML, CSS</dd>
+                                <dd>HTML,CSS</dd>
                             </dl>
                             <dl>
                                 <dt>참여도</dt>
                                 <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                             </dl>
                             <div class="btn">
-                                <a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf"
-                                    target="_blank">PROGRESS</a>
-                                <a href=" https://iloveblueberry.github.io/tiamo/" target="_blank">WEBSITE</a>
-                                <a href="http://ti-amo.co.kr/main/main.asp" target="_blank">기존SITE</a>
+                                <P><a href="img/상세페이지/띠아모구현_인터랙티브 UI기획&디자인_merged_compressed.pdf" target="_blank">PROGRESS</a></P>
+                                <SPAN><a href=" https://iloveblueberry.github.io/tiamo/"
+                                        target="_blank">WEBSITE</a></SPAN>
                             </div>
                         </div><!-- .text end -->
 
@@ -256,16 +298,16 @@
                                 </dl>
                                 <dl>
                                     <dt>사용언어</dt>
-                                    <dd>HTML, CSS, JQUERY, REACT</dd>
+                                    <dd>HTML,CSS,JQUERY,REACT</dd>
                                 </dl>
                                 <dl>
                                     <dt>참여도</dt>
                                     <dd>디자인&퍼블리싱 개인작업(100%)</dd>
                                 </dl>
                                 <div class="btn">
-                                    <a href="img/상세페이지/부산투어_구현.pdf" target="_blank">PROGRESS</a>
-                                    <a href="https://fastidious-semifreddo-a5d410.netlify.app"
-                                        target="_blank">WEBSITE</a>
+                                    <P><a href="img/상세페이지/부산투어_구현.pdf" target="_blank">PROGRESS</a></P>
+                                    <SPAN><a href="https://fastidious-semifreddo-a5d410.netlify.app"
+                                            target="_blank">WEBSITE</a></SPAN>
                                 </div>
                             </div><!-- .text end -->
                             <div class="tablet_img">
@@ -275,39 +317,6 @@
                     </div><!-- .busan_inner -->
                 </div><!-- .busan end -->
 
-                <div class="canada" data-aos="fade-right" data-aos-duration="1200">
-                    <div class="cont">
-                        <div class="pc_img">
-                            <span></span>
-                            <p><img src="img/캐나다모바일목업.png" alt="캐나다모바일목업"></p>
-                        </div><!-- .pc_img end -->
-                        <div class="text">
-                            <h4>YTOUR(CANADA)</h4>
-                            <dl>
-                                <dt>프로젝트</dt>
-                                <dd>반응형웹 디자인&퍼블리싱 웹접근성</dd>
-                            </dl>
-                            <dl>
-                                <dt>프로그램</dt>
-                                <dd>FIGMA, VSCODE</dd>
-                            </dl>
-                            <dl>
-                                <dt>사용언어</dt>
-                                <dd>HTML, CSS ,JS, JQUERY</dd>
-                            </dl>
-                            <dl>
-                                <dt>참여도</dt>
-                                <dd>디자인&퍼블리싱 개인작업(100%)</dd>
-                            </dl>
-                            <div class="btn">
-                                <a href="https://www.figma.com/file/Ltmb69Tu4O6Fufxb1HBQNV/Untitled?type=design&node-id=0-1&mode=design&t=9hzyX43JbQlcTGWG-0"
-                                    target="_blank">PROGRESS</a></P>
-                                <a href="https://iloveblueberry.github.io/canada/" target="_blank">WEBSITE</a>
-                                <a href="img/상세페이지/접근성1920_2.pdf" target="_blank">웹접근성검사</a>
-                            </div><!-- .btn end -->
-                        </div><!-- .text end -->
-                    </div><!-- .cont end -->
-                </div><!-- .canada end -->
             </div><!-- .inner end -->
         </section><!-- .publishing end -->
 
@@ -321,64 +330,49 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a href="img/디자인/오난코리아.jpg" data-fancybox="images">
-                                <img src="img/디자인/오난코리아.jpg" alt="오난코리아" /></a>
-                            <p>Photoshop&Figma</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/디자인/광안리마라톤포스터3.png" data-fancybox="images">
-                                <img src="img/디자인/광안리마라톤포스터3.png" alt="광안리마라톤포스터" /></a>
-                            <p>Illustrator</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/디자인/붕어빵포스터2.png" data-fancybox="images">
-                                <img src="img/디자인/붕어빵포스터2.png" alt="붕어빵포스터" /></a>
-                            <p>Photoshop</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/디자인/가을패션세일.jpg" data-fancybox="images">
+                            <a href="img/디자인/가을패션세일.jpg" aria-multiline="가을패션세일" data-fancybox="images">
                                 <img src="img/디자인/가을패션세일.jpg" alt="가을패션세일" /></a>
                             <p>Illustrator</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/블랙프라이데이2.jpg" data-fancybox="images">
+                            <a href="img/디자인/블랙프라이데이2.jpg" aria-multiline="블프" data-fancybox="images">
                                 <img src="img/디자인/블랙프라이데이2.jpg" alt="블프" /></a>
                             <p>Illustrator</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/여름네일4.png" data-fancybox="images">
+                            <a href="img/디자인/여름네일4.png" aria-multiline="네일" data-fancybox="images">
                                 <img src="img/디자인/여름네일4.png" alt="네일" /></a>
                             <p>Illustrator</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/모닝커피3.jpg" data-fancybox="images">
+                            <a href="img/디자인/모닝커피3.jpg" aria-multiline="모닝커피" data-fancybox="images">
                                 <img src="img/디자인/모닝커피3.jpg" alt="모닝커피" /></a>
-                            <p>Photoshop</p>
+                            <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/이케아.jpg" data-fancybox="images">
-                                <img src="img/디자인/이케아.jpg" alt="이케아" /></a>
-                            <p>Photoshop</p>
+                            <a href="img/디자인/이케아.jpg" aria-multiline="이케아" data-fancybox="images">
+                            <img src="img/디자인/이케아.jpg" alt="이케아" /></a>
+                            <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/하와이항공권.jpg" data-fancybox="images">
-                                <img src="img/디자인/하와이항공권.jpg" alt="하와이항공권" /></a>
-                            <p>Photoshop</p>
+                            <a href="img/디자인/하와이항공권.jpg" aria-multiline="하와이항공권" data-fancybox="images">
+                            <img src="img/디자인/하와이항공권.jpg" alt="하와이항공권" /></a>
+                            <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/신혼부부최애템.jpg" data-fancybox="images">
-                                <img src="img/디자인/신혼부부최애템.jpg" alt="신혼부부" /></a>
-                            <p>Photoshop</p>
+                            <a href="img/디자인/신혼부부최애템.jpg" aria-multiline="신혼부부" data-fancybox="images">
+                            <img src="img/디자인/신혼부부최애템.jpg" alt="신혼부부" /></a>
+                            <p>PHOTOSHOP</p>
+                        </div>
+                        <div class="swiper-slide">   
+                            <a href="img/디자인/부산여행_최종.jpg" aria-multiline="부산여행" data-fancybox="images">
+                            <img src="img/디자인/부산여행_최종.jpg" alt="부산여행" /></a>
+                            <p>PHOTOSHOP</p>
                         </div>
                         <div class="swiper-slide">
-                            <a href="img/디자인/부산여행_최종.jpg" data-fancybox="images">
-                                <img src="img/디자인/부산여행_최종.jpg" alt="부산여행" /></a>
-                            <p>Photoshop</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="img/디자인/그린샐러드.png" data-fancybox="images">
-                                <img src="img/디자인/그린샐러드.png" alt="그린샐러드" /></a>
-                            <p>Photoshop</p>
+                            <a href="img/디자인/그린샐러드.png" aria-multiline="그린샐러드" data-fancybox="images">
+                            <img src="img/디자인/그린샐러드.png" alt="그린샐러드" /></a>
+                            <p>PHOTOSHOP</p>
                         </div>
                     </div><!-- .swiper wrapper -->
                 </div><!-- .swiper end -->
